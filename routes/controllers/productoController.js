@@ -42,6 +42,7 @@ exports.actualizarProducto = async (req, res) => {
         producto.categoria = categoria; 
         producto.ubicacion = ubicacion; 
         producto.precio = precio; 
+        
 
         producto = await Producto.findOneAndUpdate({ _id: req.params-id }, producto, { new: true })
         res.json(producto);
