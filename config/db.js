@@ -1,19 +1,4 @@
-
-const mongoose=require("mongoose");
-
-   mongoose.connect("mongodb://localhost:27017/meanproductos", {
-     useNewUrlParser:true,
-     useUnifiedTopology: true
-   })
-    .then(()=>{
-      console.log("Conexión correcta");
-    })
-    .catch(err =>{
-      console.log(err);
-    })
-
-
-/* const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 require('dotenv').config({ path: 'variables.env' }); 
 
 const conectarDB = async () => {
@@ -39,4 +24,3 @@ const conectarDB = async () => {
 
 module.exports = conectarDB
 
-*/
