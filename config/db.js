@@ -11,7 +11,6 @@ const conectarDB = async () => {
             useCreateIndex: true,
             // useFindAndModify: false
 
-
         })
         console.log('BD Conectada');  
     } 
